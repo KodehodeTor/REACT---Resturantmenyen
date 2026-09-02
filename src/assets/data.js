@@ -1,4 +1,4 @@
-const meny = [
+export const meny = [
   {
     id: 1,
     tittel: "Spaghetti Bolognese",

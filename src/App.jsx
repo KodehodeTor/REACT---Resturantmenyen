@@ -1,4 +1,5 @@
 import "./App.css";
+import { meny } from "./assets/data.js";
 
 function App() {
   return <></>;
