@@ -1,13 +1,13 @@
 import "./App.css";
 import { meny } from "./assets/data.js";
 
-function MenuItem() {
+function MenuItem({ tittel, pris, ingredienser, kategori }) {
   return (
     <div>
-      <h2>Spahetti Bolognes</h2>
-      <p>159 kr</p>
-      <p>Spagetthi, kjøttsaus, parmesan</p>
-      <p>Hovedrett</p>
+      <h2>{tittel}</h2>
+      <p>{pris}</p>
+      <p>{ingredienser}</p>
+      <p>{kategori}</p>
     </div>
   );
 }
