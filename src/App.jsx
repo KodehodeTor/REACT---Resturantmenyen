@@ -1,15 +1,27 @@
 import "./App.css";
-import { meny } from "./assets/data.js";
 
-function MenuItem({ tittel, pris, ingredienser, kategori }) {
+function App() {
   return (
-    <div>
-      <h2>{tittel}</h2>
-      <p>{pris}</p>
-      <p>{ingredienser}</p>
-      <p>{kategori}</p>
+    <div className="resturant_app">
+      <h1>Vår Meny</h1>
+      <div className="meny_list">
+
+        {meny.map(function (item) {
+    return (
+      <MenuItem
+        key={item.id}
+        tittel={item.tittel}
+        pris={item.pris}
+        ingredienser={item.ingredienser}
+        kategori={item.kategori}
+      />
+    );
+  });
+}
+      </div>
     </div>
-  );
+    
+  )
 }
 
-export default MenuItem;
+export default App;
