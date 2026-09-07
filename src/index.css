@@ -30,15 +30,27 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.menu_container h2 {
+.tittel {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
 }
 
-.menu_container p {
+.pris {
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.ingredienser {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.kategori {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-top: auto;
 }
 
 body {
