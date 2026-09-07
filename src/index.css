@@ -36,21 +36,26 @@ h1::after {
 /* Entire menu container */
 
 .menu_container {
-  background-color: pink;
-  border: 1px solid black;
-  border-radius: 12px;
+  background: rgba(255, 20, 147, 0.15);
   padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 2, 0, 0.22);
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   transition: transform 0.2s ease;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba (255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+  max-width: 80vw;
+  margin: 1rem;
+  margin-inline: auto;
 }
 
 /* Hover effect on menu */
 
 .menu_container:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
 }
 
 .tittel {
