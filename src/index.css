@@ -24,6 +24,7 @@ h1 {
   gap: 0.5rem;
 }
 
+/* ... visual break */
 h1::after {
   content: "....................................................................................................................................................................";
   overflow: hidden;
@@ -45,6 +46,8 @@ h1::after {
   gap: 0.5rem;
   transition: transform 0.2s ease;
 }
+
+/* Hover effect on menu */
 
 .menu_container:hover {
   transform: translateY(-4px);
