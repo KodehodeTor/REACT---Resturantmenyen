@@ -1,17 +1,31 @@
-body {
+/* CSS Reset */
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#root {
-  width: 1126px;
+.menu_container {
+  background-color: pink;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit), minmax(250px, 1fr);
+  gap: 1.5rem;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  min-height: 100sch;
 }
 
 h1,
